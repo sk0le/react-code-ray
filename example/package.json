@@ -1,34 +1,17 @@
 {
-  "name": "react-code-ray",
-  "version": "0.1.10",
-  "private": false,
-  "description": "Two test React components",
-  "author": "Amel Islamovic",
-  "keywords": [
-    "react",
-    "code blocks",
-    "ui",
-    "syntax highlight"
-  ],
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/types/index.d.ts",
-  "files": [
-    "dist/**/*.js",
-    "dist/**/*.d.ts",
-    "dist/**/*.css"
-  ],
+  "name": "example",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "@types/highlight.js": "^10.1.0",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "highlight.js": "^11.7.0",
     "react": "^18.2.0",
+    "react-code-ray": "^0.1.10",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2",
@@ -36,8 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && tsc && npm run copy-css",
-    "copy-css": "copyfiles --up 1 \"src/**/*.css\" dist",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

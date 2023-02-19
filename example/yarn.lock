@@ -7451,6 +7451,26 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
+react-code-ray@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/react-code-ray/-/react-code-ray-0.1.10.tgz#48fcf751bd9b9e62488dfa2d822ec8e498da5888"
+  integrity sha512-ETc3ZY76KjyXG/Ed8kqFjiKXWXVLYYxt6eP+tPMPduWE19Qd2sxDSV2Y59tTGeIroyDiHca/+r9i+H1bbABA7Q==
+  dependencies:
+    "@testing-library/jest-dom" "^5.14.1"
+    "@testing-library/react" "^13.0.0"
+    "@testing-library/user-event" "^13.2.1"
+    "@types/highlight.js" "^10.1.0"
+    "@types/jest" "^27.0.1"
+    "@types/node" "^16.7.13"
+    "@types/react" "^18.0.0"
+    "@types/react-dom" "^18.0.0"
+    highlight.js "^11.7.0"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+    react-scripts "5.0.1"
+    typescript "^4.4.2"
+    web-vitals "^2.1.0"
+
 react-dev-utils@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-12.0.1.tgz#ba92edb4a1f379bd46ccd6bcd4e7bc398df33e73"

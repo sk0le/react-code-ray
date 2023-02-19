@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --editor-padding: 16px 16px 21px 16px;
+  --syntax-text: #ffffff;
+  --syntax-background: rgba 0, 0, 0, 0.75;
+  --syntax-string: #dfd473;
+  --syntax-comment: #807796;
+  --syntax-variable: #73dfa5;
+  --syntax-variable-2: #ffffff;
+  --syntax-variable-3: #e08569;
+  --syntax-number: #7a7ffd;
+  --syntax-atom: #7a7ffd;
+  --syntax-keyword: #ff659c;
+  --syntax-property: #1ac8ff;
+  --syntax-definition: #73dfa5;
+  --syntax-meta: #f1ecfe;
+  --syntax-operator: #ff659c;
+  --syntax-attribute: #73dfa5;
+  --syntax-tag: #ff659c;
+
+  --background: #0d0d0d;
+  --panel-background: #191919;
+  --panel-border: 1px solid hsla(0, 0%, 100%, 0.2);
+  --panel-text-color: hsla(0, 0%, 100%, 0.4);
+  --panel-dropdown-border: hsla(0, 0%, 100%, 0.1);
+  --panel-padding-selected: #fff;
+  --frame-background: rgba(0, 0, 0, 0.75);
+  --frame-control-color: hsla(0, 0%, 100%, 0.2);
+  --frame-title-placeholder-color: hsla(0, 0%, 100%, 0.3);
+  --frame-title-color: hsla(0, 0%, 100%, 0.6);
+  --frame-shadow-border: rgba(0, 0, 0, 0.8);
+  --frame-highlight-border: hsla(0, 0%, 100%, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ray-code {
+  padding: var(--padding);
+  max-width: 910px;
+  background-image: linear-gradient(
+    140deg,
+    rgb(165, 142, 251),
+    rgb(233, 191, 248)
+  );
+}
+
+.ray-code__inside {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 0 1px var(--frame-highlight-border),
+    0 0 0 1.5px var(--frame-shadow-border), 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  background: var(--frame-background);
+  min-height: 120px;
+  padding-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.ray-code__header {
+  width: 100%;
+
+  display: grid;
+  height: 24px;
+  align-items: center;
+  padding: 0 16px;
+  grid-gap: 12px;
+  grid-template-columns: 45px 1fr 45px;
+}
+
+.ray-code__header section {
+  display: flex;
+  gap: 6px;
+}
+.ray-code__header section div {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: var(--frame-control-color);
+}
+
+.ray-code__header-title {
+  position: relative;
+  height: 16px;
+  color: var(--frame-title-placeholder-color);
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.ray-code__code {
+  display: block;
+  overflow-x: auto;
+  padding: 10px;
+  -webkit-text-size-adjust: none;
+  color: var(--syntax-text);
+  padding: var(--editor-padding);
+  margin: 0;
+  font-family: JetBrains Mono, monospace;
+  font-size: 15px;
+  font-variant-ligatures: none;
+  font-weight: 500;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  letter-spacing: 0.1px;
+  line-height: 22.5px;
+  white-space: pre-wrap;
+}
+
+.hljs {
+  color: var(--syntax-text);
+}
+.hljs-subst,
+.hljs-tag {
+  color: var(--syntax-tag);
+}
+.hljs-bullet,
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-quote,
+.hljs-regexp {
+  color: var(--syntax-number);
+}
+.hljs-attr,
+.hljs-code,
+.hljs-section,
+.hljs-selector-class,
+.hljs-title {
+  color: var(--syntax-definition);
+}
+.hljs-strong {
+  font-weight: 700;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-keyword,
+.hljs-name,
+.hljs-selector-tag {
+  color: var(--syntax-keyword);
+}
+.hljs-attribute,
+.hljs-property,
+.hljs-symbol {
+  color: var(--syntax-property);
+}
+.hljs-class .hljs-title,
+.hljs-params,
+.hljs-title.class_ {
+  color: var(--syntax-definition);
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-selector-attr,
+.hljs-selector-id,
+.hljs-selector-pseudo,
+.hljs-string {
+  color: var(--syntax-string);
+}
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color: var(--syntax-variable);
+}
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: var(--syntax-comment);
+}
