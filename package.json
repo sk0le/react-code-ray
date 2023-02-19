@@ -1,6 +1,6 @@
 {
   "name": "react-code-ray",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "private": false,
   "description": "Two test React components",
   "author": "Amel Islamovic",
@@ -16,7 +16,8 @@
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts",
-    "dist/**/*.css"
+    "dist/**/*.css",
+    "README.md"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

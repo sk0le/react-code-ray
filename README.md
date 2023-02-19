@@ -1,5 +1,7 @@
 # react-code-ray
 
+![alt](https://i.ibb.co/fYDRyt5/Screenshot-2023-02-20-003900.jpg "Image").
+
 Hi guys! This is my first NPM package, so I hope you will enjoy it.
 Other day, I as googling something and I noticed that all code on some of these website are the same, plain boring backgroud with some syntaxt highlighting. So I wrote package that can show you beautiful code, I took design from ray.so and converted it into NPM package. Test it out on: react-code-ray.amelislamovic.tech
 
