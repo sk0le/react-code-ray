@@ -1,6 +1,6 @@
 {
-  "name": "react-code-ray",
-  "version": "0.1.16",
+  "name": "@sk0le/react-code-ray",
+  "version": "0.1.18",
   "private": false,
   "description": "Two test React components",
   "author": "Amel Islamovic",
